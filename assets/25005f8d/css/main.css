@@ -1,0 +1,4059 @@
+@font-face {
+    font-family: dinar_mj;
+    src: url('../fonts/Mj_Dinar Two Medium.ttf') format("truetype")
+}
+
+@font-face {
+    font-family: koodakBold;
+    src: url(../fonts/BKoodakBold.eot?#) format("eot"), url(../fonts/BKoodakBold.ttf) format("truetype"), url(../fonts/BKoodakBold.woff) format("woff")
+}
+
+@font-face {
+    font-family: proxima;
+    src: url(../fonts/en/proximanova-reg.ttf) format("truetype"), url(../fonts/en/proximanova-reg.woff) format("woff")
+}
+
+@font-face {
+    font-family: proxima_bold;
+    src: url(../fonts/en/proximanova-bold.ttf) format("truetype"), url(../fonts/en/proximanova-bold.woff) format("woff")
+}
+
+* {
+    -webkit-border-radius: 0 !important;
+    border-radius: 0 !important
+}
+
+html {
+    min-height: 100%
+}
+
+body {
+    display: -webkit-box !important;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 230px 0 0;
+    min-height: 100vh;
+    width: 100%;
+    font: 700 13px koodakBold;
+    background: url(../img/png/body_back.jpg)
+}
+
+.nav li .up_pinter {
+    background-image: url(../img/png/menu_up_pointer.png);
+    background-position: 0 0;
+    width: 9px;
+    height: 5px;
+    position: absolute;
+    margin-top: 50px;
+    display: none
+}
+
+li.dropdown:hover > .up_pinter {
+    display: block
+}
+
+.container {
+    min-width: 75%
+}
+
+.menu_container {
+    min-width: 100%;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s
+}
+
+.modal-open {
+    overflow: auto !important
+}
+
+body > .container {
+    padding-top: 15px
+}
+
+a {
+    color: #666
+}
+
+a:focus, a:hover, a:visited {
+    text-decoration: none
+}
+
+.navbar-nav {
+    margin-top: 40px
+}
+
+hr {
+    border-color: #d4d4d4
+}
+
+img {
+    max-width: 100%
+}
+
+div#bs-example-navbar-collapse-1 {
+    border-color: #C2DFFF;
+    padding: 8px 0
+}
+
+.top-menu.navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    -webkit-border-radius: 1px !important;
+    border-radius: 1px !important
+}
+
+.dropdown-menu > li > a {
+    color: #565454
+}
+
+.dropdown .caret {
+    display: none
+}
+
+.top-menu.navbar-inverse {
+    border: none;
+    background-repeat: repeat no-repeat;
+    height: 120px
+}
+
+.navbar-inverse .navbar-toggle {
+    background-color: #292e96;
+}
+
+.green {
+    color: #5ec6c0
+}
+
+.share-facebook {
+    display: inline-block
+}
+
+body, div, h1, h2, h3, h4, h5, h6, li, p, span, strong, ul {
+    color: #565454
+}
+
+.dr_logo {
+    margin-top: 10px
+}
+
+.white {
+    background: #fff;
+    border: none
+}
+
+.wheat {
+    background: #f6e8ce;
+    border: none
+}
+
+.menu_box {
+    border-top: 9px solid #1fd3d2;
+    padding-left: 0;
+    background: #292e96
+}
+
+.white ul li a {
+    color: #d6ca5a;
+    background: -webkit-linear-gradient(left, #FCFA78, #FFDA44);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+.white ul li a:hover {
+    color: #d6ca5a !important
+}
+
+.menu_box ul li a:hover, .menu_box ul li ul li a:hover {
+    text-decoration: none;
+    color: #565454
+}
+
+.menu_pointer {
+    background-image: url(../img/png/triangle.png);
+    background-repeat: no-repeat;
+    margin-right: 75px;
+    position: absolute;
+    display: none
+}
+
+.sub_menu {
+    z-index: 3;
+    position: relative
+}
+
+.menu_up_pointer {
+    background: url(../img/png/menu_up_pointer.png) 50% 0 no-repeat;
+    margin-top: -15px;
+    background-color: transparent !important;
+    width: 100%
+}
+
+.menu li ul {
+    background-color: #fff;
+    display: none;
+    position: absolute;
+    padding-right: 0;
+    width: 160px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px
+}
+
+.menu li ul li {
+    background-color: #fff;
+    display: block;
+    font-size: 17px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 93%;
+    margin-right: 5px
+}
+
+.menu li ul li a {
+    width: 100%;
+    display: block;
+    color: #38435f
+}
+
+.menu_icon_ghomsheyi {
+    margin-right: 84px
+}
+
+#ghomsheyi {
+    margin-right: 55px
+}
+
+.logo {
+    width: 34%;
+    border-top: 9px solid #ffce2b;
+    padding-top: 18px;
+    min-width: 388px;
+    padding-right: 12px
+}
+
+.after_slider {
+    height: 110px;
+    margin-right: 0;
+    width: 100%;
+    display: block;
+    margin-top: 5px;
+    background: url(../img/png/navar.jpg);
+    margin-left: -16px
+}
+
+.after_slider h4 {
+    text-align: center;
+    margin-top: 40px;
+    color: #394460
+}
+
+.black {
+    background: #38435f;
+    display: block;
+    color: #fff;
+    height: 61px
+}
+
+.latest_projects h2 {
+    text-align: center;
+    margin-top: 19px;
+    color: #ffde47
+}
+
+.latest_projects_item {
+    padding-top: 55px;
+    padding-bottom: 55px
+}
+
+.latest_projects_item h6 {
+    color: #000;
+    text-align: center;
+    font-size: 16px
+}
+
+.latest_projects_item h6:hover {
+    color: #ff9b05
+}
+
+.latest_projects_item p {
+    font-size: 20px
+}
+
+.future_work {
+    background: #fff
+}
+
+.features_content {
+    margin-top: 10px;
+    padding-left: 0;
+    text-align: justify !important
+}
+
+.features_content_read_more span {
+    color: #c7c7c7
+}
+
+.future_work_box {
+    padding-bottom: 10px
+}
+
+.features_content_block {
+    padding-bottom: 25px;
+    background: #fff;
+    padding-right: 0;
+    padding-left: 0;
+    text-align: justify
+}
+
+.news_latter_title h3 {
+    color: #91d8d4
+}
+
+.news_latter_input {
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #e2e0e0;
+    height: 48px;
+    margin-top: 30px
+}
+
+.news_latter_submit {
+    background: #5ec6c0;
+    color: #fff;
+    border: 0;
+    margin-top: 31px;
+    height: 50px;
+    width: 152px
+}
+
+.divider_news, .faq_item {
+    border-bottom: 4px double
+}
+
+.site_map {
+    padding: 15px 0;
+    background-color: #292e96
+}
+
+.footer_content, .padding_bottom {
+    padding-bottom: 50px
+}
+
+.list_content_box, .privacy_policy {
+    padding-right: 0
+}
+
+.site_map_item a h6 {
+    font-size: 17px
+}
+
+.footer_content {
+    margin-top: 13px;
+    background: #fff;
+    padding-top: 50px;
+    padding-left: 0
+}
+
+.footer_content_separator {
+    border-left: 1px solid;
+    display: block;
+    position: relative;
+    width: 5px;
+    height: 40px;
+    margin-top: -8px;
+    margin-left: 10px;
+    padding-right: 0
+}
+
+.footer_logo img {
+    max-width: 272px
+}
+
+.privacy_policy {
+    color: #fff
+}
+
+.privacy_policy.right {
+    margin-top: 10px;
+    font-family: koodakBold !important
+}
+
+.close_read_more, .maede_title, .table_content_header h6 {
+    font-family: koodakBold
+}
+
+.qr_code_image {
+    background: url(../img/png/QR.jpg) center center no-repeat;
+    display: block;
+    position: relative;
+    width: 108px;
+    height: 148px;
+    float: left;
+    -webkit-background-size: 108px 108px !important;
+    background-size: 108px !important
+}
+
+.social_shop {
+    background: url(../img/png/shop.png) no-repeat;
+    height: 45px;
+    width: 44px;
+    margin-right: 8px;
+    margin-top: 15px
+}
+
+.social_shop:hover {
+    background-image: url(../img/png/shop_hover.png)
+}
+
+.social > a {
+    height: 37px;
+    width: 37px;
+    margin-right: 4px;
+    display: inline-block;
+    -webkit-background-size: 37px 37px;
+    background-size: 37px 37px
+}
+
+.social > a:hover {
+    -webkit-background-size: 37px 37px;
+    background-size: 37px 37px
+}
+
+.social_fa {
+    background: url(../img/png/facebook-2.png)
+}
+
+.social_fa:hover {
+    background: url(../img/png/facebook-2-hover.png)
+}
+
+.social_insta {
+    background: url(../img/png/instagram-2.png)
+}
+
+.social_insta:hover {
+    background: url(../img/png/instagram-2-hover.png)
+}
+
+.social_tlgrm {
+    background: url(../img/png/telegram-2.png)
+}
+
+.social_tlgrm:hover {
+    background: url(../img/png/telegram-2-hover.png)
+}
+
+.nivo-nextNav, .nivo-prevNav {
+    display: none !important
+}
+
+.features_contents {
+    background: #fffdf6
+}
+
+.features_content_read_more {
+    padding-top: 20px
+}
+
+.list_items h3 {
+    display: inline-block
+}
+
+.padding0 {
+    padding: 0
+}
+
+.padding_top {
+    padding-top: 50px
+}
+
+.padding_top_10 {
+    padding-top: 10px
+}
+
+.padding_bottom_10 {
+    padding-bottom: 10px
+}
+
+.padding_bottom_20 {
+    padding-bottom: 20px
+}
+
+.padding_bottom_40 {
+    padding-bottom: 40px
+}
+
+.padding_top_20 {
+    padding-top: 20px
+}
+
+.padding_top_35 {
+    padding-top: 35px
+}
+
+.margin_auto {
+    margin: 0 auto;
+    display: block
+}
+
+.margin_top5 {
+    margin-top: 5px
+}
+
+.margin_top10 {
+    margin-top: 10px
+}
+
+.margin_top20 {
+    margin-top: 20px
+}
+
+.margin_top40 {
+    margin-top: 40px
+}
+
+.margin_top50 {
+    margin-top: 50px
+}
+
+.margin_top70 {
+    margin-top: 70px
+}
+
+.margin_top100 {
+    margin-top: 100px
+}
+
+.margin_bottom10 {
+    margin-bottom: 10px
+}
+
+.margin_bottom30 {
+    margin-bottom: 30px
+}
+
+.margin_bottom40 {
+    margin-bottom: 40px
+}
+
+.margin_bottom50 {
+    margin-bottom: 50px
+}
+
+.margin_bottom60 {
+    margin-bottom: 60px
+}
+
+.margin_bottom70 {
+    margin-bottom: 70px
+}
+
+.margin_bottom80 {
+    margin-bottom: 80px
+}
+
+.margin_bottom90 {
+    margin-bottom: 90px
+}
+
+.margin_bottom100 {
+    margin-bottom: 100px
+}
+
+.center {
+    text-align: center !important
+}
+
+.latest_projects_title, .list_items_point {
+    color: #449b8d
+}
+
+.list_items_title a {
+    color: #646464
+}
+
+.list_content div h3, .naghl_sayer {
+    color: #5ec6c0
+}
+
+.latest_projects_header {
+    margin-top: -35px
+}
+
+.naghl_sayer {
+    text-align: left;
+    padding-left: 0
+}
+
+.content_separator {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    margin-right: 90px
+}
+
+.table_content, .table_content_green {
+    padding-top: 10px;
+    padding-bottom: 10px
+}
+
+.content_separator img {
+    position: absolute;
+    z-index: 1;
+    width: 90%
+}
+
+.biography_content_title, .picture_gallery_title {
+    color: #449b8d
+}
+
+.picture_gallery img {
+    float: left
+}
+
+a:hover {
+    text-decoration: none;
+    color: #646464
+}
+
+.speech_button2:hover {
+    text-decoration: none;
+    color: #feda44
+}
+
+.table_content_point h6 {
+    color: #666d77
+}
+
+.table_content_green {
+    background: #dce3fd
+}
+
+.table_content_header h6 {
+    font-size: 17px;
+    color: #3034b9;
+    font-weight: 700
+}
+
+.list_height {
+    height: 48px
+}
+
+.islamic_list_height {
+    height: 60px
+}
+
+.divider {
+    height: 70px;
+    float: right
+}
+
+.down_divider {
+    background: url(../img/png/down_divider.png) bottom no-repeat;
+    width: 100%
+}
+
+.min_height_255 {
+    min-height: 255px
+}
+
+.min_height_140 {
+    min-height: 140px
+}
+
+.poets_name {
+    text-align: center;
+    font-size: 17px !important
+}
+
+.poets_name a {
+    color: #bfbfbf
+}
+
+.bozorgan_title_image {
+    overflow: hidden
+}
+
+.justify, .reading_box p {
+    text-align: justify
+}
+
+.list_item h3, .maede_title {
+    text-align: center
+}
+
+.maede_pagination {
+    margin: 0 auto;
+    width: 450px
+}
+
+.maede_title {
+    font-size: 25px;
+    font-weight: 700;
+    color: #68c3bc;
+    margin-left: -20px;
+    margin-top: -10px;
+    background: #fff;
+    z-index: 10
+}
+
+.bozorgan_title_image img {
+    margin-right: -5px;
+    width: 104%;
+    padding-top: 5px
+}
+
+.teenager_title_image img {
+    margin-right: -5px;
+    width: 100%;
+    padding-top: 5px
+}
+
+.zarbolmasal_image_header img {
+    width: 60% !important
+}
+
+.teenager_title_image {
+    margin-right: 0
+}
+
+.slider_block {
+    position: relative;
+    z-index: 1
+}
+
+.list_content_green div h3 a {
+    color: #449b8d
+}
+
+.nivoSlider p {
+    margin: 0 !important
+}
+
+.excerpts_content {
+    padding: 5px 0 0
+}
+
+.picture_gallery_first {
+    padding: 0
+}
+
+.picture_gallery_first p img {
+    width: 174px
+}
+
+.item_content_box div {
+    max-width: 300px;
+    float: right
+}
+
+.naghle_ghol_box {
+    height: 230px
+}
+
+.zarbolmasal_box {
+    height: 115px
+}
+
+.speech_button {
+    padding-top: 10px
+}
+
+.speech_button:hover {
+    color: #fff
+}
+
+.question, .speech_en_download_link {
+    color: #5ec6c0
+}
+
+.name_speech {
+    margin-top: 85px;
+    padding-top: 8px;
+    padding-bottom: 8px
+}
+
+.name_speech_second {
+    margin-top: 35px
+}
+
+.grow_up {
+    width: 102.3%;
+    margin-right: -14px
+}
+
+.scroll_menu {
+    position: fixed;
+    right: 0;
+    top: -20px;
+    z-index: 20
+}
+
+.scroll_menu_content {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1312px
+}
+
+.logo_image, .maede_image p img {
+    width: 100%
+}
+
+.small_logo {
+    display: none
+}
+
+.primary_logo, .small_logo {
+    position: relative;
+    z-index: 10
+}
+
+.naghle_ghol_image_box img {
+    width: 60% !important
+}
+
+.poet_view_header_image {
+    width: 100%;
+    max-width: 360px;
+    padding-right: 0
+}
+
+@media screen and (min-width: 200px) and (max-width: 1199px) {
+    .site_map_item_first {
+        margin-right: 10px !important
+    }
+}
+
+@media screen and (min-width: 1361px) and (max-width: 1863px) {
+    .scroll_menu .white ul li {
+        font-size: 25px !important;
+        padding-right: 10px !important
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1366px) {
+    .theme-default .nivo-controlNav {
+        margin-top: -50px !important;
+        margin-right: 225px !important
+    }
+
+    .nivo-caption {
+        padding-top: 2% !important
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 999px) {
+    .white ul li {
+        font-size: 15px !important
+    }
+
+    .scroll_menu .white ul li {
+        font-size: 17px !important;
+        padding-right: 10px !important
+    }
+
+    .logo {
+        padding-top: 18px !important;
+        min-width: 247px !important;
+        padding-left: 0 !important
+    }
+
+    .scroll_menu_content {
+        width: 140% !important
+    }
+
+    .theme-default .nivo-controlNav {
+        margin-top: -50px !important;
+        margin-right: 180px !important
+    }
+
+    .nivo-caption {
+        padding-top: 2% !important
+    }
+
+    .col-md-12 img {
+        width: 100%
+    }
+
+    .menu_7_view {
+        width: 102% !important
+    }
+}
+
+@media screen and (min-width: 200px) and (max-width: 767px) {
+    .small_logo {
+        display: block !important
+    }
+
+    .primary_logo {
+        display: none !important
+    }
+
+    .white ul li {
+        font-size: 22px !important;
+        padding-right: 10px !important
+    }
+
+    .logo {
+        width: 8% !important;
+        padding-top: 18px !important;
+        min-width: 247px !important;
+        padding-left: 0 !important
+    }
+
+    .scroll_menu_content {
+        width: 135% !important
+    }
+
+    .col-md-12 img {
+        width: 100%
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1260px) {
+    .dr_logo {
+        padding-left: 0 !important
+    }
+
+    .navbar-nav {
+        padding-right: 0 !important
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1360px) {
+    .scroll_menu_content {
+        width: 100%;
+        margin: 0 auto
+    }
+
+    .inside_grow_up {
+        width: 102.3% !important;
+        right: 0
+    }
+
+    .poet_view_header_image img {
+        max-width: 362px
+    }
+}
+
+@media screen and (min-width: 200px) and (max-width: 1365px) {
+    .slider_home_page {
+        min-width: 200px !important
+    }
+}
+
+@media screen and (min-width: 1361px) and (max-width: 1365px) {
+    .grow_up {
+        width: 101.3%;
+        margin-right: -14px
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .biography_sidebar, .faq_box div, .first_block_books, .news_box div, .second_block_books {
+        width: 100% !important
+    }
+
+    .media_content_box, .media_content_box div {
+        padding: 0 !important
+    }
+
+    .articles_box, .articles_image_box, .first_block_books div, .second_block_books div {
+        float: none !important
+    }
+
+    .picture_gallery_second p img {
+        max-width: 174px
+    }
+
+    .first_block_books, .second_block_books {
+        float: none !important
+    }
+
+    .first_block_books div div, .second_block_books div div {
+        display: inline-block !important
+    }
+
+    .books_box, .media_box, .new_projects_box {
+        width: 100% !important;
+        min-height: 300px !important
+    }
+
+    .media_content_box {
+        max-width: 260px !important;
+        min-height: 300px !important
+    }
+
+    .content_separator {
+        width: 95% !important;
+        margin-right: 45px !important
+    }
+
+    .slider_home_page {
+        min-width: 750px !important
+    }
+
+    .menu_bar {
+        min-width: 718px !important
+    }
+
+    .menu_home {
+        min-width: 732px !important
+    }
+
+    .articles_image_box {
+        height: 55px
+    }
+
+    .articles_image_box img {
+        margin-right: 5px !important
+    }
+
+    .reading_planning_image p img {
+        padding-left: 15px
+    }
+
+    .great_books_header {
+        padding: 0
+    }
+
+    .links_items {
+        width: 100% !important
+    }
+
+    .grow_up {
+        width: 103.3% !important;
+        margin-right: -14px;
+        right: 0
+    }
+
+    .inside_grow_up {
+        width: 103% !important;
+        right: 0
+    }
+
+    .another_image_header {
+        height: 110px
+    }
+
+    .poet_view_header_image {
+        position: relative !important;
+        top: 0 !important
+    }
+}
+
+@media screen and (min-width: 991px) and (max-width: 1199px) {
+    .slider_home_page {
+        min-width: 969px !important
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .grow_up {
+        width: 102.3% !important;
+        margin-right: -14px
+    }
+
+    .inside_grow_up {
+        width: 104.3% !important;
+        right: 0
+    }
+}
+
+.question_response {
+    margin-left: 63px;
+    display: none
+}
+
+.faq_item .close_read_more, .read_more {
+    float: left;
+    margin-left: 5px;
+    font-size: 14px
+}
+
+.question_response p {
+    width: 75%
+}
+
+.faq_item {
+    padding-bottom: 4px
+}
+
+.faq_item .close_read_more {
+    width: 72px;
+    margin-top: -18px;
+    cursor: pointer;
+    display: none
+}
+
+.faq_item .close_read_more_icon {
+    background: url(../img/png/close_read_more.png) 100% no-repeat;
+    width: 25px;
+    height: 25px;
+    float: left;
+    cursor: pointer;
+    margin-top: -4px
+}
+
+.faq_item .read_more_icon {
+    background: url(../img/png/read_more.png) 100% 100% no-repeat;
+    width: 25px;
+    float: left;
+    height: 30px;
+    margin-top: -7px;
+    cursor: pointer;
+    margin-right: 10px
+}
+
+.close_read_more {
+    width: 75%;
+    display: none
+}
+
+.read_more {
+    margin-top: 8px
+}
+
+.question {
+    width: 90%;
+    display: inline-block
+}
+
+.question p {
+    width: 82%;
+    display: inline-block;
+    vertical-align: text-top
+}
+
+.divider_news {
+    display: block;
+    width: 100%;
+    position: absolute;
+    margin-top: 31px
+}
+
+.news_title {
+    background: #fff;
+    z-index: 2;
+    position: relative;
+    width: 200px;
+    margin: 15px auto
+}
+
+.latest_projects_item p img {
+    margin: 0 auto
+}
+
+.features div {
+    width: 100%
+}
+
+.features div div h3 {
+    font-size: 20px
+}
+
+.scroll_bar {
+    height: 600px;
+    overflow-y: scroll;
+    margin-left: 15px;
+    float: right;
+    direction: ltr;
+    margin-bottom: 25px
+}
+
+.scroll_bar::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5
+}
+
+.scroll_bar::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px #85cfc6;
+    background: -webkit-gradient(linear, 40% 0, 75% 84%, from(#9eeee4), to(#9eeee4), color-stop(.6, #9eeee4)) #85cfc6
+}
+
+.scroll_bar::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px #85cfc6;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background-color: #F5F5F5
+}
+
+.naghle_ghol_title {
+    width: 100%;
+    margin-top: 0;
+    color: #565454
+}
+
+.nivo-caption p strong {
+    color: #fff
+}
+
+.ghomshei_list {
+    padding-top: 0;
+    margin-top: -10px
+}
+
+.news_header_title {
+    text-align: center !important
+}
+
+.overflow_hidden {
+    overflow: hidden
+}
+
+.faq_item img {
+    vertical-align: top;
+    max-width: 28px
+}
+
+.articles_title {
+    direction: ltr !important
+}
+
+.articles_title a:hover {
+    color: #5ec6c0
+}
+
+.articles_title img {
+    max-width: 35px
+}
+
+.great_books_description {
+    margin-bottom: 50px
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .inside_grow_up {
+        width: 104% !important;
+        right: 0
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1360px) {
+    .menu_bar, .menu_box {
+        padding-left: 0
+    }
+
+    .menu_box {
+        border-top: 9px solid #165a5a;
+        padding-right: 0;
+        width: 100%
+    }
+
+    .logo {
+        width: 100%;
+        border-top: 9px solid #85cfc6;
+        padding-top: 12px;
+        min-width: 388px;
+        padding-right: 12px;
+        background: #fff;
+        text-align: center !important;
+        padding-bottom: 12px;
+        float: none !important
+    }
+
+    .logo img {
+        width: 30%
+    }
+
+    .menu_box_responsive {
+        width: 900px;
+        margin: -10px auto 0
+    }
+
+    #ghomsheyi {
+        margin-right: 0
+    }
+
+    .menu_icon_ghomsheyi {
+        margin-right: 75px
+    }
+
+    .logo_box_responsive_add_width {
+        width: 100% !important
+    }
+}
+
+@media screen and (min-width: 200px) and (max-width: 768px) {
+    .menu_bar {
+        padding-left: 0
+    }
+
+    .menu_box {
+        display: none
+    }
+
+    .small_display_menu {
+        right: 0;
+        width: 101.7%;
+        margin-right: -12px;
+        display: block !important;
+        height: 50px;
+        padding-right: 10px;
+        z-index: 20;
+        border: 0;
+        border-top: 9px solid #165a5a
+    }
+
+    .logo {
+        width: 100.5% !important;
+        border-top: 9px solid #85cfc6;
+        padding-top: 12px;
+        min-width: 388px;
+        padding-right: 12px;
+        background: #fff;
+        text-align: center !important;
+        padding-bottom: 12px;
+        float: none !important
+    }
+
+    .logo img {
+        width: 30%
+    }
+
+    .menu_box_responsive {
+        width: 900px;
+        margin: -10px auto 0
+    }
+
+    #ghomsheyi {
+        margin-right: 0
+    }
+
+    .menu_icon_ghomsheyi {
+        margin-right: 75px
+    }
+
+    .logo_box_responsive_add_width {
+        width: 100% !important
+    }
+
+    .inside_grow_up {
+        width: 105%
+    }
+
+    .grow_up {
+        width: 104%
+    }
+
+    .nivo-caption {
+        padding-top: 0 !important
+    }
+
+    .nivo-caption p strong {
+        font-size: 17px
+    }
+
+    .theme-default .nivo-controlNav {
+        margin-top: -50px !important;
+        margin-right: 160px !important
+    }
+}
+
+.menu_box_responsive {
+    margin-top: -10px
+}
+
+.menu_scroller_back {
+    width: 100%;
+    height: 126px;
+    position: fixed;
+    top: 0;
+    background: #38435f;
+    right: 0;
+    z-index: 20;
+    border-top: 1px solid #85cfc6
+}
+
+.logo_box_responsive_add_width {
+    width: 448px
+}
+
+.articles_header_image img, .item_content_box img {
+    width: 100%
+}
+
+.menu_primary, .menu_scroller_back {
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s
+}
+
+.features_widget_description p, .title-box-fa_ir h2 {
+    display: block;
+    width: 100%
+}
+
+.margin_top25 {
+    margin-top: 25px
+}
+
+.margin_top30 {
+    margin-top: 30px
+}
+
+.home_blocks_read_more {
+    color: #6ACCC6;
+    margin-bottom: 1px;
+    margin-left: -80px
+}
+
+.color_green, .color_green:hover {
+    color: #6ACCC6
+}
+
+.articles_block_home_page {
+    min-height: 250px
+}
+
+.read_more_home_page_button {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 1px solid #f6c427;
+    width: 149px;
+    display: block;
+    text-align: center;
+    float: left;
+    background: #f6c427;
+    color: #283653
+}
+
+.home_blocks_read_more a:focus {
+    text-decoration: none !important;
+    color: #fff !important
+}
+
+.read_more_home_page_button:hover {
+    color: #fff
+}
+
+.future_work_content {
+    padding: 0
+}
+
+.future_work_content h2 {
+    color: #000;
+    margin-top: 35px;
+    margin-bottom: 20px
+}
+
+.future_work_content h2:hover {
+    color: #fc9e00
+}
+
+.features_block_thumbnail {
+    padding: 0
+}
+
+.biography_sidebar img {
+    width: 100%
+}
+
+.menu_border {
+    border-bottom: 1px solid #e0e0e0
+}
+
+.sub_menu_items a {
+    background: -webkit-linear-gradient(left, #A09D9D, #A09D9D) !important;
+    -webkit-text-fill-color: transparent !important;
+    -webkit-background-clip: text !important
+}
+
+.portfolio-filter, .portfolio-items {
+    list-style: none;
+    padding: 0;
+    margin: 0 -20px 20px 0
+}
+
+.portfolio-filter > li {
+    display: inline-block
+}
+
+.portfolio-items > li {
+    float: left;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.portfolio-items.col-2 > li {
+    width: 50%
+}
+
+.portfolio-items.col-3 > li {
+    width: 33%
+}
+
+.portfolio-items.col-4 > li {
+    width: 25%;
+    height: 220px;
+    overflow: hidden
+}
+
+.portfolio-items.col-5 > li {
+    width: 20%
+}
+
+.portfolio-items.col-6 > li {
+    width: 16%
+}
+
+.portfolio-item {
+    padding: 0;
+    margin: 0
+}
+
+.portfolio-item .item-inner {
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 10px;
+    margin: 0 20px 20px 0;
+    position: relative;
+    height: 100%
+}
+
+.portfolio-item img {
+    width: auto;
+    height: 100%;
+    display: block;
+    margin: 0 auto
+}
+
+.portfolio-item h5 {
+    background: #fff;
+    margin: 0;
+    padding: 10px 0;
+    font-weight: 700;
+    font-size: 14px;
+    color: #2c3e50;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden
+}
+
+.portfolio-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: rgba(255, 255, 255, .9);
+    text-align: center;
+    vertical-align: middle;
+    -webkit-transition: opacity .3s;
+    -o-transition: opacity .3s;
+    transition: opacity .3s
+}
+
+.portfolio-item .overlay .preview {
+    position: relative;
+    top: 50%;
+    display: inline-block;
+    margin-top: -20px;
+    color: #fff !important;
+    background: #292E96 !important;
+    -webkit-background-clip: inherit !important;
+    -webkit-text-fill-color: inherit !important;
+    padding-top: 8px
+}
+
+.portfolio-item:hover .overlay {
+    opacity: .7;
+    background: #000
+}
+
+.isotope-item {
+    z-index: 2
+}
+
+.isotope-hidden.isotope-item {
+    pointer-events: none;
+    z-index: 1
+}
+
+.isotope {
+    -webkit-transition-duration: .8s;
+    -o-transition-duration: .8s;
+    transition-duration: .8s;
+    -webkit-transition-property: height, width;
+    -o-transition-property: height, width;
+    transition-property: height, width
+}
+
+.isotope .isotope-item {
+    -webkit-transition-duration: .8s;
+    -o-transition-duration: .8s;
+    transition-duration: .8s;
+    -webkit-transition-property: opacity, -webkit-transform;
+    -o-transition-property: transform, opacity;
+    transition-property: transform, opacity;
+    transition-property: transform, opacity, -webkit-transform
+}
+
+.isotope .isotope-item.no-transition, .isotope.no-transition, .isotope.no-transition .isotope-item {
+    -webkit-transition-duration: 0s;
+    -o-transition-duration: 0s;
+    transition-duration: 0s
+}
+
+.isotope.infinite-scrolling {
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none
+}
+
+.pp_expand {
+    display: none !important
+}
+
+.portfolio_tabs {
+    display: table;
+    margin: 0 auto
+}
+
+.btn-default.active, .portfolio_tabs li a, .portfolio_tabs li a:hover {
+    background: 0 0;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+
+.artsTabsBorder {
+    border-top: 1px solid #D4D5D6;
+    padding-top: 30px;
+    width: Calc((100% - 280px) / 2);
+    display: block;
+    margin: 5px auto 0;
+    float: right
+}
+
+.dr_logo img, .go-home-page img, .lang li {
+    display: inline-block
+}
+
+.portfolio_tabs li a {
+    color: #3034b9
+}
+
+.portfolio-btn {
+    color: #8A8989 !important
+}
+
+.portfolio-btn.active {
+    color: #3034b9 !important
+}
+
+.portfolio_block {
+    margin: 0 auto;
+    float: none
+}
+
+.faq-counter {
+    color: #3034b9
+}
+
+.selective-item {
+    float: right
+}
+
+.selective-item:nth-child(odd) {
+    padding-left: 7px
+}
+
+.selective-item:nth-child(even) {
+    padding-right: 7px
+}
+
+@media screen and (min-width: 1200px) {
+    .selective-item {
+        width: 50%
+    }
+}
+
+@media screen and (min-width: 1660px) and (max-width: 99999px) {
+    .selective-item {
+        min-height: 295px
+    }
+
+    .masterSayingList {
+        width: 34%
+    }
+
+    .two-line-with-image-box {
+        width: 66%
+    }
+}
+
+@media screen and (min-width: 1580px) and (max-width: 1659px) {
+    .selective-item {
+        min-height: 345px
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1299px) {
+    .selective-item {
+        height: 350px
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .selective-item {
+        padding: 0 !important
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .selective-item {
+        padding: 0 !important
+    }
+}
+
+.masterSayingList, .two-line-with-image-box {
+    padding: 0
+}
+
+.two-line-with-image-box * {
+    text-align: center !important
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1580px) {
+    .selective-item {
+        min-height: 330px
+    }
+
+    .masterSayingList {
+        width: 34%
+    }
+
+    .two-line-with-image-box {
+        width: 66%
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 999999px) {
+    .two-line-with-image-box {
+        padding-right: 10px
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .two-line-with-image-box {
+        padding-right: 15px
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .two-line-with-image-box {
+        padding-right: 15px
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 776px) {
+    .masterSayingList {
+        text-align: center;
+        margin-bottom: 6px
+    }
+}
+
+.master-saying-reference * {
+    text-align: center !important
+}
+
+.speech_button2 {
+    background-color: #292e96;
+    color: #fff;
+    -webkit-border-radius: 3px !important;
+    border-radius: 3px !important;
+    padding: 5px 40px
+}
+
+.dr_logo img {
+    width: 80px;
+    height: 80px;
+    float: right;
+    margin-top: 5px !important
+}
+
+div[class*=title-box-] {
+    display: inline-block;
+    padding-right: 5px
+}
+
+div[class*=title-box-] h1, div[class*=title-box-] h2 {
+    margin: 0 0 5px;
+    color: #ffdf36
+}
+
+.title-box-fa_ir h2 {
+    font: 700 20px koodakBold
+}
+
+.title-box-fa_ir h1 {
+    font: 400 28px dinar_mj
+}
+
+.title-box-en {
+    margin-top: 10px !important
+}
+
+.title-box-en h2 {
+    font: 400 30px proxima !important
+}
+
+.title-box-en h1 {
+    font: 400 37px proxima !important
+}
+
+.go-home-page img {
+    width: 60px;
+    height: 60px;
+    float: right
+}
+
+div[class*=title-box-en] h1, div[class*=title-box-en] h2 {
+    direction: ltr !important;
+    text-align: left !important;
+    padding-left: 5px
+}
+
+div[class*=footer-title-box-] h1, div[class*=footer-title-box-] h2 {
+    color: #fff
+}
+
+.footer-title-box-en h1 {
+    font: 400 20px dinar_mj
+}
+
+.footer-title-box-en h2 {
+    margin-top: -5px;
+    font: 400 18px dinar_mj
+}
+
+.footer-title-box-fa_ir h1 {
+    font: 400 16px dinar_mj
+}
+
+.footer-title-box-fa_ir h2 {
+    font: 400 14px dinar_mj
+}
+
+.quotes {
+    font-family: koodakBold;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 2
+}
+
+.lang li, .lang li a {
+    font: 700 12px koodakBold;
+    color: #fff
+}
+
+.quotes * {
+    text-align: center !important
+}
+
+.main_body {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1
+}
+
+.headerDetails {
+    position: relative
+}
+
+.lang {
+    position: absolute;
+    top: 10px;
+    padding: 0;
+    margin: 0
+}
+
+.lang li a:hover {
+    color: #dedede
+}
+
+.flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%
+}
+
+.flex .pageTitlesText {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    padding: 0 15px !important
+}
+
+.flex .biographyDescriptionBorder {
+    -webkit-box-flex: 3;
+    -webkit-flex-grow: 3;
+    -ms-flex-positive: 3;
+    flex-grow: 3
+}
+
+.flex.row {
+    -webkit-box-align: start !important;
+    -webkit-align-items: flex-start !important;
+    -ms-flex-align: start !important;
+    align-items: flex-start !important;
+    margin: 0 -15px;
+    width: auto
+}
+
+.flex.row:not(.flex) {
+    width: 96%
+}
+
+.not-found h1, .not-found img {
+    text-align: center
+}
+
+html[lang=en] body, html[lang=en] div, html[lang=en] h1, html[lang=en] h2, html[lang=en] h3, html[lang=en] h4, html[lang=en] h5, html[lang=en] h6, html[lang=en] li, html[lang=en] p, html[lang=en] span, html[lang=en] strong, html[lang=en] ul {
+    font-family: proxima;
+    direction: ltr;
+    text-align: left;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 2
+}
+
+html[lang=en] strong {
+    font-family: proxima_bold
+}
+
+html[lang=en] .margin_right_15 {
+    margin-right: 15px !important
+}
+
+html[lang=en] .social {
+    margin-left: 120px;
+    text-align: left;
+    background-image: url(../images/footer-line.png);
+    background-repeat: no-repeat;
+    -webkit-background-size: 2px 148px;
+    background-size: 2px 148px;
+    padding-left: 10px;
+    height: 148px;
+    padding-top: 24px
+}
+
+html[lang=en] .site-links {
+    text-align: left;
+    direction: ltr
+}
+
+html[lang=en] .right {
+    float: right;
+    text-align: right;
+    direction: rtl
+}
+
+html[lang=en] .biographyDescriptionText {
+    font-size: 29px;
+    font-family: proxima_bold
+}
+
+html[lang=en] .nav li .up_pinter {
+    margin-left: 40px
+}
+
+html[lang=en] .booksListImage {
+    border-left: 3px solid #4D629A
+}
+
+html[lang=en] .padding-left-70 {
+    padding-left: 70px
+}
+
+html[lang=en] .padding-left-35 {
+    padding-left: 35px
+}
+
+html[lang=en] .padding-left-50 {
+    padding-left: 50px
+}
+
+html[lang=en] .left {
+    float: left
+}
+
+html[lang=en] .biography_content * {
+    font-size: 15px;
+    line-height: 1.38
+}
+
+html[lang=en] .pageTitlesText {
+    font-family: proxima_bold;
+    font-size: 29px
+}
+
+html[lang=en] .books_list_title {
+    float: left;
+    padding-left: 0;
+    color: #3034b9;
+    width: 100%;
+    text-align: left
+}
+
+html[lang=en] .page-pointer {
+    text-align: center;
+    width: 98%;
+    display: block;
+    margin-top: 25px;
+    float: left;
+    margin-bottom: -15px
+}
+
+html[lang=en] .list-image {
+    background-color: initial;
+    float: right
+}
+
+html[lang=en] .padding_left0 {
+    padding-left: 0
+}
+
+html[lang=en] .read-more-block .collapsed, html[lang=en] .read-more-icon {
+    float: right;
+    height: 30px;
+    cursor: pointer;
+    width: 100px
+}
+
+html[lang=en] .read-more-block .collapsed {
+    background: url(../img/png/read_more.jpg) right 0 bottom 8px no-repeat
+}
+
+html[lang=en] .read-more-icon {
+    background: url(../img/png/read_more_close.jpg) right 0 bottom 8px no-repeat
+}
+
+html[lang=en] .dropdown-menu > li > a, html[lang=en] .top-menu.navbar-inverse .navbar-nav > li > a {
+    font-size: 15px
+}
+
+html[lang=en] div[class*=title-box-fa_ir] {
+    display: none
+}
+
+html[lang=en] .dropDownImage.margin_auto {
+    border: none;
+    padding: 0
+}
+
+html[lang=en] .dr_logo {
+    float: left;
+    text-align: left
+}
+
+html[lang=en] .dr_logo img {
+    float: left
+}
+
+html[lang=en] .lang {
+    right: 10px
+}
+
+html[lang=en] #nav_box .pull-right {
+    float: left !important
+}
+
+html[lang=en] #nav_box .nav {
+    padding-left: 10px !important
+}
+
+@media screen and (max-width: 767px) {
+    html[lang=en] .lang {
+        right: 60px;
+        top: 12px
+    }
+
+    html[lang=en] .lang li {
+        display: inline-block !important;
+        width: auto !important
+    }
+}
+
+html[lang=fa_ir] .form .errorSummary p, html[lang=fa_ir] .last, html[lang=fa_ir] .maede_pagination .first {
+    display: none
+}
+
+html[lang=fa_ir] body, html[lang=fa_ir] div, html[lang=fa_ir] h1, html[lang=fa_ir] h2, html[lang=fa_ir] h3, html[lang=fa_ir] h4, html[lang=fa_ir] h5, html[lang=fa_ir] h6, html[lang=fa_ir] li, html[lang=fa_ir] p, html[lang=fa_ir] span, html[lang=fa_ir] strong, html[lang=fa_ir] ul {
+    direction: rtl;
+    text-align: right
+}
+
+html[lang=fa_ir] .navbar-nav {
+    float: right;
+    font-size: 15px;
+    padding-right: 20px;
+    font-family: dinar_mj;
+    color: #565454;
+    list-style: none;
+    font-weight: 700
+}
+
+html[lang=fa_ir] .right {
+    float: right;
+    direction: rtl;
+    text-align: right
+}
+
+html[lang=fa_ir] .left {
+    float: left
+}
+
+html[lang=fa_ir] .dr_logo {
+    margin-top: -9px;
+    margin-right: -30px;
+    padding-top: 27px;
+    padding-right: 16px;
+    padding-left: 40px
+}
+
+html[lang=fa_ir] .after_slider h4 {
+    font-family: koodakBold;
+    font-size: 27px;
+    font-weight: 700
+}
+
+html[lang=fa_ir] .latest_projects_item img {
+    margin-right: -40px
+}
+
+html[lang=fa_ir] .latest_projects_item p {
+    font-family: koodakBold
+}
+
+html[lang=fa_ir] .latest_projects_item h6 {
+    font-family: koodakBold;
+    font-size: 20px
+}
+
+html[lang=fa_ir] .future_work_date h2 {
+    color: #5ec6c0;
+    line-height: 20px;
+    font-family: koodakBold;
+    margin-top: 25px
+}
+
+html[lang=fa_ir] .future_work_content h2 {
+    font-family: koodakBold;
+    font-size: 20px;
+    text-align: center
+}
+
+html[lang=fa_ir] .features_content p, html[lang=fa_ir] .features_content_read_more span {
+    font-family: koodakBold;
+    font-size: 17px
+}
+
+html[lang=fa_ir] .news_latter_title h3 {
+    font-family: koodakBold;
+    margin-top: 5px;
+    text-align: right;
+    font-size: 30px
+}
+
+html[lang=fa_ir] .news_latter_input {
+    margin-right: 10px;
+    font-family: koodakBold;
+    font-size: 17px;
+    width: 97.3%
+}
+
+html[lang=fa_ir] .greatePoetriesBlock > h3 > a, html[lang=fa_ir] .privacy_policy {
+    font-family: koodakBold;
+    font-size: 17px
+}
+
+html[lang=fa_ir] .latest_projects h2 {
+    font-family: koodakBold;
+    font-size: 22px
+}
+
+html[lang=fa_ir] button, html[lang=fa_ir] html input[type=button], html[lang=fa_ir] html input[type=button], html[lang=fa_ir] input[type=reset], html[lang=fa_ir] input[type=submit], html[lang=fa_ir] input[type=reset], html[lang=fa_ir] input[type=submit] {
+    -webkit-appearance: button;
+    cursor: pointer
+}
+
+html[lang=fa_ir] .news_latter_submit {
+    font-size: 23px;
+    font-family: koodakBold;
+    font-weight: 700;
+    margin-right: 10px;
+    text-align: right;
+    padding-right: 60px
+}
+
+html[lang=fa_ir] .slider_home_page {
+    min-width: 1345px;
+    margin-right: -14px
+}
+
+html[lang=fa_ir] .list_items {
+    font-family: koodakBold;
+    padding-right: 0;
+    padding-top: 10px;
+    border-right: 3px solid #85cfc6
+}
+
+html[lang=fa_ir] .list_items h3 {
+    padding-right: 15px
+}
+
+html[lang=fa_ir] .latest_projects_title {
+    margin-left: -18px;
+    font-family: koodakBold;
+    font-weight: 700;
+    font-size: 25px
+}
+
+html[lang=fa_ir] .list_items_point {
+    font-size: 30px
+}
+
+html[lang=fa_ir] .list_items_title {
+    font-size: 27px;
+    font-weight: 700
+}
+
+html[lang=fa_ir] .projects_name {
+    font-size: 18px;
+    font-family: koodakBold;
+    text-align: center;
+    color: #565454
+}
+
+html[lang=fa_ir] .list_content_img {
+    padding-left: 0;
+    margin-right: 45px
+}
+
+html[lang=fa_ir] .list_content {
+    padding-right: 10px
+}
+
+html[lang=fa_ir] .biography_content {
+    font-family: koodakBold;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 28px
+}
+
+html[lang=fa_ir] .right_separator {
+    margin-right: -30px
+}
+
+html[lang=fa_ir] .biography_content_title {
+    margin-left: -40px;
+    font-family: koodakBold;
+    font-weight: 700;
+    font-size: 25px
+}
+
+html[lang=fa_ir] .picture_gallery_title {
+    margin-left: 12px;
+    font-family: koodakBold;
+    font-weight: 700;
+    font-size: 25px
+}
+
+html[lang=fa_ir] .picture_gallery_first {
+    margin-left: 10px
+}
+
+html[lang=fa_ir] .picture_gallery_second {
+    margin-left: 28px
+}
+
+html[lang=fa_ir] .list_content div h3 {
+    font-family: koodakBold;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: right;
+    margin-right: 20px
+}
+
+html[lang=fa_ir] .list_content div p {
+    font-family: koodakBold;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: justify
+}
+
+html[lang=fa_ir] .maede_pagination .selected a {
+    color: #449b8d
+}
+
+html[lang=fa_ir] .zarbolmasal h3 p {
+    font-size: 25px;
+    color: #5ec6c0
+}
+
+html[lang=fa_ir] .long_text {
+    font-size: 22px
+}
+
+html[lang=fa_ir] .table_content h6, html[lang=fa_ir] .table_content_green h6 {
+    font-size: 13px
+}
+
+html[lang=fa_ir] .persian_books h6 {
+    font-size: 17px;
+    font-family: koodakBold;
+    font-weight: 700
+}
+
+html[lang=fa_ir] .table_content_point h6 {
+    font-family: koodakBold;
+    font-size: 17px
+}
+
+html[lang=fa_ir] .table_content_header_point h6 {
+    text-align: right
+}
+
+html[lang=fa_ir] .poet_block {
+    border-right: 2px solid #68c3bc;
+    padding-right: 10px !important;
+    margin-top: 20px;
+    font-family: koodakBold;
+    font-size: 17px;
+    font-weight: 700;
+    direction: rtl;
+    text-align: right;
+    padding-left: 100px
+}
+
+html[lang=fa_ir] .bozorgan {
+    padding-right: 0
+}
+
+html[lang=fa_ir] .poets_image p img {
+    width: 169px
+}
+
+html[lang=fa_ir] .list_item {
+    font-family: koodakBold;
+    padding-right: 14px;
+    padding-top: 10px
+}
+
+html[lang=fa_ir] .article_content {
+    margin-right: 0;
+    padding-right: 15px
+}
+
+html[lang=fa_ir] #ghomsheyi ul {
+    margin-right: -60px
+}
+
+html[lang=fa_ir] #hekmat ul, html[lang=fa_ir] #ziafat ul {
+    margin-right: -25px
+}
+
+html[lang=fa_ir] #barname ul {
+    width: 235px;
+    margin-right: -46px
+}
+
+html[lang=fa_ir] #news ul {
+    margin-right: -35px
+}
+
+html[lang=fa_ir] #about ul {
+    width: 215px;
+    margin-right: -70px
+}
+
+html[lang=fa_ir] .site_map_item {
+    border-right: 2px solid #384360;
+    padding-right: 15px
+}
+
+html[lang=fa_ir] .features_content {
+    padding-right: 0;
+    font-family: koodakBold;
+    font-size: 17px
+}
+
+html[lang=fa_ir] #ziafat_pointer {
+    margin-right: 61px
+}
+
+html[lang=fa_ir] #hekmat_pointer {
+    margin-right: 62px
+}
+
+html[lang=fa_ir] #news_pointer {
+    margin-right: 53px
+}
+
+html[lang=fa_ir] #about_pointer {
+    margin-right: 41px
+}
+
+html[lang=fa_ir] .form_error_box {
+    margin-right: 15px
+}
+
+html[lang=fa_ir] .name_speech {
+    font-family: koodakBold;
+    font-size: 17px;
+    font-weight: 700;
+    border-right: 2px solid #5ec6c0;
+    margin-right: 5px
+}
+
+html[lang=fa_ir] .speech_en_download h3, html[lang=fa_ir] .speech_en_download h4, html[lang=fa_ir] .speech_en_download h5, html[lang=fa_ir] .speech_en_download h6, html[lang=fa_ir] .speech_en_download p {
+    text-align: center
+}
+
+html[lang=fa_ir] .form .errorSummary ul li {
+    font-size: 17px
+}
+
+html[lang=fa_ir] .question {
+    font-family: koodakBold;
+    text-align: right;
+    font-size: 17px;
+    font-weight: 700
+}
+
+html[lang=fa_ir] .faq_title {
+    font-family: koodakBold;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 700
+}
+
+html[lang=fa_ir] .question p, html[lang=fa_ir] .question_response p {
+    font-size: 17px;
+    text-align: right;
+    font-family: koodakBold;
+    font-weight: 700
+}
+
+html[lang=fa_ir] .question_response {
+    margin-right: 30px
+}
+
+html[lang=fa_ir] .news_latter_submit {
+    float: left;
+    margin-left: 0
+}
+
+html[lang=fa_ir] .site_map_item_first {
+    margin-right: -35px
+}
+
+html[lang=fa_ir] p strong {
+    font-size: 22px;
+    color: #68c3bc
+}
+
+html[lang=fa_ir] .poet_box .right {
+    padding-right: 0
+}
+
+html[lang=fa_ir] .features div div h3 {
+    font-size: 20px;
+    text-align: right;
+    margin-right: 20px
+}
+
+html[lang=fa_ir] .excerpts_content p {
+    font-family: koodakBold;
+    font-size: 17px;
+    text-align: justify
+}
+
+html[lang=fa_ir] .content_box p {
+    font-size: 17px;
+    font-family: koodakBold;
+    text-align: right
+}
+
+html[lang=fa_ir] .maede_title_block {
+    padding-right: 0;
+    margin-right: -15px;
+    float: right;
+    overflow: hidden;
+    padding-top: 5px
+}
+
+html[lang=fa_ir] .news_header_block, html[lang=fa_ir] .padding_right0 {
+    padding-right: 0
+}
+
+html[lang=fa_ir] .naghle_ghol_title {
+    font-size: 20px !important
+}
+
+html[lang=fa_ir] .books_header {
+    padding-right: 100px
+}
+
+html[lang=fa_ir] .great_books_description p {
+    font-family: koodakBold;
+    font-size: 18px;
+    font-weight: 700
+}
+
+html[lang=fa_ir] .features_widget_description p {
+    text-align: right !important
+}
+
+html[lang=fa_ir] .small_display_menu {
+    font-family: mj;
+    font-size: 25px
+}
+
+html[lang=fa_ir] .poetry_header_h {
+    text-align: center !important
+}
+
+html[lang=fa_ir] .poet_view_header_image p {
+    float: right
+}
+
+html[lang=fa_ir] .home_blocks_read_more {
+    text-align: left;
+    direction: rtl;
+    font-family: koodakBold;
+    font-size: 17px
+}
+
+html[lang=fa_ir] .media_td_table, html[lang=fa_ir] .media_tr_table td {
+    font-size: 20px
+}
+
+html[lang=fa_ir] .home_biography_image img {
+    width: 87%;
+    margin-right: 10px
+}
+
+html[lang=fa_ir] .sub_menu_items a {
+    font-size: 12px
+}
+
+html[lang=fa_ir] .poetBlock {
+    text-align: right;
+    font-family: koodakBold;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 27px
+}
+
+html[lang=fa_ir] .poetBlock p {
+    text-align: right;
+    font-family: koodakBold;
+    font-weight: 700;
+    font-size: 17px
+}
+
+html[lang=fa_ir] .speech_list_title {
+    float: right;
+    font-family: koodakBold;
+    font-weight: 700;
+    padding-right: 0;
+    text-align: right;
+    font-size: 17px;
+    padding-top: 17px;
+    margin-right: 25px
+}
+
+html[lang=fa_ir] .speech_button {
+    font-size: 17px;
+    font-family: koodakBold
+}
+
+html[lang=fa_ir] .speechDescription {
+    font-size: 17px;
+    font-family: koodakBold;
+    font-weight: 700;
+    margin-right: 30px;
+    margin-top: 25px
+}
+
+html[lang=fa_ir] .description_block, html[lang=fa_ir] .media_description {
+    font-family: koodakBold;
+    font-weight: 700;
+    font-size: 17px;
+    text-align: justify
+}
+
+html[lang=fa_ir] .pageTitlesText {
+    font-family: koodakBold;
+    font-size: 22px
+}
+
+html[lang=fa_ir] .poet_box {
+    padding-right: 10px !important;
+    padding-left: 100px;
+    border-right: 2px solid #68c3bc;
+    margin-top: 20px;
+    font-family: koodakBold;
+    font-size: 17px;
+    font-weight: 700;
+    direction: rtl;
+    text-align: right
+}
+
+html[lang=fa_ir] .poet_box p {
+    direction: rtl;
+    text-align: right
+}
+
+html[lang=fa_ir] .articlesListTitle {
+    text-align: right
+}
+
+html[lang=fa_ir] .articlesListTitle a {
+    color: #675e63
+}
+
+html[lang=fa_ir] .articleDescription {
+    font-family: koodakBold;
+    font-weight: 700;
+    font-size: 17px;
+    text-align: justify
+}
+
+html[lang=fa_ir] .articleDescription p {
+    text-align: center !important
+}
+
+html[lang=fa_ir] .featuresDescription h3 {
+    font-family: koodakBold;
+    font-weight: 700;
+    font-size: 17px;
+    text-align: right
+}
+
+html[lang=fa_ir] .first_block_books p, html[lang=fa_ir] .second_block_books p {
+    text-align: right
+}
+
+html[lang=fa_ir] .booksBoxList h6, html[lang=fa_ir] .booksBoxList span {
+    font-size: 17px !important;
+    font-family: koodak !important;
+    font-weight: 700;
+    color: #565454 !important
+}
+
+html[lang=fa_ir] .islamicBooksBlock h6, html[lang=fa_ir] .islamicBooksBlock span {
+    font-size: 15px !important;
+    font-family: Tahoma !important;
+    color: #565454 !important
+}
+
+html[lang=fa_ir] .mediasBoxList h3, html[lang=fa_ir] .mediasBoxList h6, html[lang=fa_ir] .mediasBoxList span {
+    font-size: 17px !important;
+    font-family: koodak !important;
+    font-weight: 700;
+    color: #565454 !important
+}
+
+html[lang=fa_ir] .newProductList h3, html[lang=fa_ir] .newsDescriptionBlock, html[lang=fa_ir] .newsDescriptionBlock p {
+    font-family: koodakBold;
+    font-weight: 700;
+    font-size: 17px;
+    text-align: right
+}
+
+html[lang=fa_ir] .latestProductBlock p {
+    text-align: right
+}
+
+html[lang=fa_ir] .latestProductsImage {
+    padding-right: 10px
+}
+
+html[lang=fa_ir] .question > :first-child p {
+    width: 20px
+}
+
+html[lang=fa_ir] .ownerQuotationBlock p {
+    font-size: 17px !important
+}
+
+html[lang=fa_ir] .articlesDescriptionBlock p {
+    text-align: right
+}
+
+html[lang=fa_ir] .mediaTabItem {
+    font: 700 13px dinar_mj;
+    height: 65px;
+    direction: rtl;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.pagination > .next, .pagination > .prev, html[lang=fa_ir] .text-align-left {
+    direction: ltr
+}
+
+html[lang=fa_ir] .features-list img {
+    float: right
+}
+
+html[lang=fa_ir] .margin-right-20 {
+    margin-right: 20px
+}
+
+html[lang=fa_ir] .width77 {
+    width: 77%
+}
+
+html[lang=fa_ir] .two-line-with-image-box {
+    font-family: koodakBold;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 2
+}
+
+html[lang=fa_ir] .two-line-with-image-box.news {
+    text-align: justify !important
+}
+
+html[lang=fa_ir] .speech_button {
+    float: left
+}
+
+html[lang=fa_ir] .speechBlock {
+    padding-right: 50px
+}
+
+html[lang=fa_ir] .englishBooksList h6 {
+    font-size: 15px !important;
+    font-family: Tahoma !important;
+    color: #565454 !important
+}
+
+html[lang=fa_ir] .description_block p {
+    text-align: right;
+    float: right;
+    line-height: 2
+}
+
+html[lang=fa_ir] .read-more-block {
+    font-family: koodakBold;
+    font-weight: 700;
+    font-size: 14px
+}
+
+html[lang=fa_ir] .portfolio_tabs li a {
+    font-family: koodakBold;
+    font-weight: 700;
+    font-size: 17px
+}
+
+html[lang=fa_ir] .padding_right_40 {
+    padding-right: 40px
+}
+
+html[lang=fa_ir] .link-row a {
+    float: left;
+    text-align: left;
+    font-family: tahoma;
+    font-size: 15px
+}
+
+html[lang=fa_ir] .media-list-table .table_content_point h6, html[lang=fa_ir] .media-list-table h6 {
+    font-family: koodakBold;
+    font-weight: 700;
+    font-size: 17px
+}
+
+html[lang=fa_ir] .poet-name--great-poetry {
+    padding-right: 0
+}
+
+html[lang=fa_ir] .poet-name--great-poetry > :first-child {
+    margin-top: 34px;
+    position: absolute;
+    width: 100%;
+    font-family: koodakBold;
+    font-weight: 700;
+    font-size: 17px;
+    color: #3034b9
+}
+
+html[lang=fa_ir] .second-tab .biographyDescriptionBorder:nth-child(1) {
+    margin-right: 15px !important
+}
+
+html[lang=fa_ir] .new-article .item img {
+    border-right: 4px solid #828282;
+    padding: 0 4px 0 10px
+}
+
+html[lang=fa_ir] .footer_block .go-home-page {
+    font-size: 20px
+}
+
+html[lang=fa_ir] .footer_block .go-home-page span {
+    font-size: 28px
+}
+
+html[lang=fa_ir] .social {
+    margin-left: 120px;
+    text-align: left;
+    background-image: url(../images/footer-line.png);
+    background-repeat: no-repeat;
+    -webkit-background-size: 2px 148px;
+    background-size: 2px 148px;
+    padding-left: 10px;
+    height: 148px;
+    padding-top: 24px
+}
+
+html[lang=fa_ir] .site-links {
+    margin-top: 10px;
+    text-align: left;
+    direction: ltr
+}
+
+html[lang=fa_ir] .second-tab .biographyDescriptionText {
+    font-size: 22px
+}
+
+html[lang=fa_ir] .nav li .up_pinter {
+    margin-right: 40px
+}
+
+html[lang=fa_ir] .booksListImage {
+    border-right: 3px solid #4D629A
+}
+
+html[lang=fa_ir] .books_list_title {
+    float: right;
+    padding-right: 0;
+    color: #3034b9;
+    width: 100%;
+    text-align: right;
+    font-weight: 700
+}
+
+html[lang=fa_ir] .read-more-block .collapsed {
+    background: url(../img/png/read_more.jpg) 20% 40% no-repeat;
+    float: left;
+    height: 30px;
+    cursor: pointer;
+    width: 100px
+}
+
+html[lang=fa_ir] .read-more-icon {
+    background: url(../img/png/read_more_close.jpg) 20% 40% no-repeat;
+    float: left;
+    height: 30px;
+    cursor: pointer;
+    width: 100px
+}
+
+.box > h4, .btn {
+    background: #38acec
+}
+
+html[lang=fa_ir] div[class*=title-box-en] {
+    display: none
+}
+
+html[lang=fa_ir] .dr_logo {
+    float: right;
+    text-align: right
+}
+
+html[lang=fa_ir] .headerDetails .nav {
+    margin-right: -40px
+}
+
+html[lang=fa_ir] .lang {
+    left: 10px
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1245px) {
+    html[lang=fa_ir] .dr_logo {
+        padding-left: 0
+    }
+}
+
+@media screen and (max-width: 767px) {
+    html[lang=fa_ir] .biography_content {
+        font-size: 16px;
+        line-height: 2
+    }
+
+    html[lang=fa_ir] .lang {
+        left: 60px;
+        top: 20px
+    }
+
+    html[lang=fa_ir] .lang li {
+        display: inline-block !important;
+        width: auto !important
+    }
+
+    html[lang=fa_ir] .pageTitlesText {
+        font: 700 21px koodakBold !important
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 999px) {
+    html[lang=fa_ir] .poet_block {
+        float: right !important
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 991px) {
+    html[lang=fa_ir] .articlesListTitle {
+        text-align: center
+    }
+}
+
+.item-joke .vote > ul.onbottom {
+    position: absolute;
+    bottom: 113px;
+    top: initial
+}
+
+.box {
+    border: 1px solid #38acec;
+    margin-top: 15px
+}
+
+.box > h4 {
+    color: #fff;
+    margin: 0 0 20px;
+    padding: 10px 15px
+}
+
+.box form {
+    padding: 0 15px 15px
+}
+
+.btn {
+    border: none;
+    -webkit-border-radius: 3px !important;
+    border-radius: 3px !important;
+    font-size: 12px;
+    padding: 5px 18px
+}
+
+.box2 {
+    margin-top: 25px
+}
+
+.box2 > hr {
+    margin-right: -15px;
+    margin-top: 10px;
+    margin-bottom: 15px
+}
+
+.field-register-status_id {
+    display: none
+}
+
+.menu_user_avatar {
+    width: 57px;
+    height: 57px;
+    -webkit-border-radius: 50% !important;
+    border-radius: 50% !important;
+    float: right;
+    margin-left: 7px
+}
+
+.not-found {
+    text-align: center !important;
+    margin-bottom: 15px;
+    padding: 80px 0
+}
+
+.not-found img {
+    width: 170px
+}
+
+.not-found h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 auto;
+    color: #2f2e2e;
+    text-align: center !important;
+}
+
+.left-title {
+    width: 100%;
+    padding: 0 20px 8px
+}
+
+.file-preview-image {
+    height: auto !important;
+    max-height: 160px
+}
+
+.file-preview-frame {
+    margin-left: 2px
+}
+
+.users-form h2 img {
+    -webkit-border-radius: 50% !important;
+    border-radius: 50% !important;
+    margin-top: -37px;
+    width: 80px;
+    height: 80px;
+    font-size: 13px
+}
+
+.users-form h2 a {
+    font-size: 13px;
+    color: #3398cc;
+    font-weight: 100;
+    margin-top: 20px
+}
+
+.users-form .has-success .form-control {
+    border-color: #789878
+}
+
+.tags > a, .tags > a:hover {
+    border: 1px solid #3398CC
+}
+
+.no-margin {
+    margin: 0 !important
+}
+
+.w-100 {
+    width: 100% !important
+}
+
+.error-summary {
+    color: #a94442
+}
+
+.tags {
+    padding-top: 10px
+}
+
+.tags hr {
+    margin: 0 0 10px !important
+}
+
+.tags > a {
+    padding: 0 7px 2px;
+    margin-left: 6px;
+    margin-bottom: 5px;
+    display: inline-block;
+    background-color: #3398CC;
+    color: #fff
+}
+
+.tags > a:hover {
+    color: #3398CC;
+    background-color: #fff
+}
+
+.top-menu {
+    width: 75%;
+    margin: 0 auto;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    padding-left: 15px;
+    padding-right: 15px
+}
+
+.top-menu .user-name {
+    padding: 7px 0 5px;
+    display: inline-block;
+    font-family: Tahoma;
+    color: #fff;
+    letter-spacing: .4pt;
+    font-size: 14px
+}
+
+.top-menu .wellcome {
+    color: #fff;
+    width: 150px;
+    display: block
+}
+
+.top-menu .navbar-header {
+    clear: both;
+    margin-top: 70px
+}
+
+.top-menu .text {
+    color: #fff;
+    padding-top: 18px
+}
+
+.left-content .well {
+    border: none;
+    background: url(../images/up_leftcolumn.png) 0 top no-repeat, url(../images/Down_leftcolumn.png) 6px bottom no-repeat #fff;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-background-size: contain;
+    background-size: contain;
+    padding: 36px 3px 30px 9px
+}
+
+.left-content .well > .row {
+    background-color: #efefef;
+    margin: 0;
+    min-height: 1000px
+}
+
+.left-content hr {
+    margin: 10px 0 18px
+}
+
+.latest-posts h4 + hr {
+    margin: 20px 0
+}
+
+.left-content a.content-image {
+    width: 100%;
+    position: relative;
+    display: block;
+    -webkit-background-size: 100% 100%;
+    background-size: 100%;
+    margin-bottom: 10px;
+    background-repeat: no-repeat;
+    border: 1px solid transparent
+}
+
+.left-content a.content-image:before {
+    content: "";
+    display: block;
+    padding-top: 65%
+}
+
+.left-content a.content-image + a {
+    color: #828282
+}
+
+.left-content > img {
+    margin-top: 12px
+}
+
+.item-joke .joke > a {
+    display: block;
+    position: relative
+}
+
+.video_icon {
+    left: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    background-image: url(../images/play_video.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: 15% 15%;
+    background-size: 15%;
+    width: 100%
+}
+
+.video_icon:hover {
+    background-image: url(../images/play_video_hover.png)
+}
+
+.next {
+    background-color: transparent;
+    color: #fff;
+    padding: 6px 9px 7px;
+    font-size: 12px;
+    -webkit-border-radius: 3px !important;
+    border-radius: 3px !important;
+    margin-top: 3px
+}
+
+.nivo-caption, .nivo-caption h6, .nivo-caption p {
+    color: #fff !important;
+    text-align: center !important
+}
+
+.info .next {
+    padding: 4px 9px 5px;
+    margin-top: 0;
+    margin-left: -2px
+}
+
+.slider-wrapper {
+    width: 100% !important;
+    margin: 0 auto !important
+}
+
+.slider_position {
+    padding: 0;
+    margin-top: -15px;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1
+}
+
+.nivo-caption {
+    position: absolute !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    background: #000 !important;
+    width: 33.3% !important;
+    z-index: 8 !important;
+    right: 0 !important;
+    height: 100% !important;
+    padding: 12% 10px 5px !important;
+    opacity: .5 !important;
+    overflow: hidden !important;
+    -moz-opacity: .8 !important;
+    filter: alpha(opacity=8) !important;
+    -webkit-box-sizing: border-box !important;
+    box-sizing: border-box !important
+}
+
+.nivo-caption h6 {
+    font-family: mitra !important;
+    font-size: 45px !important
+}
+
+.nivo-caption p {
+    font-family: mitra !important;
+    font-size: 20px !important
+}
+
+.theme-default .nivo-controlNav {
+    text-align: center !important;
+    padding: 20px 0 !important;
+    margin-top: -100px !important;
+    z-index: 9 !important;
+    position: absolute;
+    margin-right: 191px !important
+}
+
+.theme-default .nivo-controlNav a {
+    display: inline-block;
+    width: 22px !important;
+    height: 22px !important;
+    background: url(../images/bullets.png) no-repeat !important;
+    text-indent: -9999px;
+    border: 0;
+    margin: 0
+}
+
+.theme-default .nivo-controlNav a.active {
+    background-position: 0 -22px !important
+}
+
+.biography_box {
+    float: none;
+    margin: 0 auto
+}
+
+.biographyImageBorder {
+    border-top: 6px #D4D5D6;
+    border-top-style: double;
+    padding-top: 25px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    max-width: 325px
+}
+
+.mediaTabItem {
+    background: #38435f;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer
+}
+
+.displayNone {
+    display: none
+}
+
+.displayBlock {
+    display: block
+}
+
+.mediaTabBlock {
+    background-color: #38435f;
+    display: block;
+    color: #fff;
+    position: fixed;
+    z-index: 10;
+    width: 75%;
+    margin-top: -10px
+}
+
+.pagination, .second-tab .biographyDescriptionText + .biographyDescriptionBorder {
+    margin: 0 auto
+}
+
+.mediaTabBlock .separator {
+    height: 10px;
+    background: #fff
+}
+
+.mediaTabItem:hover {
+    background: #feda44
+}
+
+.mediaTabItem:hover > span {
+    color: #38435f;
+    background: -webkit-linear-gradient(left, #38435f, #38435f);
+    -webkit-text-fill-color: initial;
+    -webkit-background-clip: text
+}
+
+.mediaTabItem span {
+    color: #d6ca5a;
+    background: -webkit-linear-gradient(left, #FCFA78, #FFDA44);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+.mediaTabItemSelected span, .pagination li a {
+    color: #38435f !important;
+    -webkit-text-fill-color: initial !important
+}
+
+.mediaTabItemSelected {
+    background: #feda44
+}
+
+.mediaTabItemSelected span {
+    background: -webkit-linear-gradient(left, #38435f, #38435f) !important;
+    -webkit-background-clip: text !important
+}
+
+.pagination {
+    display: table !important
+}
+
+.pagination .disabled span {
+    display: none !important
+}
+
+.pagination li a {
+    position: relative !important;
+    float: left !important;
+    padding: 6px 12px !important;
+    border: none !important;
+    font-size: 19px
+}
+
+.pagination .active a {
+    color: #d6ca5a !important
+}
+
+.biographyDescriptionBorder {
+    border-top: 6px #D4D5D6;
+    border-top-style: double;
+    padding-top: 25px;
+    display: block;
+    margin: 0 auto;
+    float: right
+}
+
+.biographyDescriptionText, .pageTitlesText {
+    display: inline-block;
+    float: right;
+    font-weight: 700
+}
+
+.second-tab .biographyDescriptionBorder {
+    border-top: 4px #a89674 double;
+    padding-top: 50px
+}
+
+.biographyDescriptionText {
+    width: 140px;
+    text-align: center;
+    color: #3034b9;
+    margin-top: -20px
+}
+
+.second-tab .biographyDescriptionText {
+    width: 175px;
+    margin-top: -35px;
+    text-align: center;
+    color: #414141;
+    letter-spacing: .9pt
+}
+
+.media_list_title, .pageTitlesText {
+    color: #3034b9;
+    text-align: center !important
+}
+
+.pageTitlesText {
+    margin-top: -25px
+}
+
+.footer_block {
+    float: none;
+    margin: 0 auto
+}
+
+.second_menu {
+    display: none
+}
+
+.media_list_title {
+    float: right;
+    padding-right: 0
+}
+
+.itemBlock {
+    background: url(../images/content_separator.png) 50% 100% no-repeat
+}
+
+.books_image {
+    padding: 5px;
+    border: 1px solid transparent;
+    width: auto
+}
+
+.description_block p {
+    width: 100%
+}
+
+.media_description p {
+    float: right;
+    width: 50%
+}
+
+.speech_list_title {
+    color: #565454;
+    width: 100%;
+    margin-top: 0
+}
+
+.speech_button {
+    background-color: #292e96;
+    color: #fff;
+    -webkit-border-radius: 3px !important;
+    border-radius: 3px !important;
+    margin-top: 55px;
+    padding: 5px 40px
+}
+
+.poet_box {
+    margin-top: 20px
+}
+
+.listArticlesImage img {
+    border: 1px solid #A7A5A5;
+    padding: 5px;
+    width: 85% !important
+}
+
+.articlesListTitle {
+    margin-top: 80px
+}
+
+.articleDetailImage {
+    margin: 20px auto
+}
+
+.newProductList h3 {
+    color: #5ec6c0
+}
+
+.featuresDescription h3 {
+    color: #415eae
+}
+
+.ownerQuotationBlock p {
+    color: #3034b9
+}
+
+.imagePositionFirstFixed {
+    position: fixed;
+    margin-top: 25px
+}
+
+.imagePositionFixed {
+    position: fixed;
+    margin-top: -120px
+}
+
+.onbottom {
+    position: absolute;
+    bottom: 113px;
+    top: initial
+}
+
+.listBooksDescription a {
+    color: #4D629A
+}
+
+.loader_block img {
+    max-width: 50px
+}
+
+.greatePoetriesBlock:hover > h3 > a {
+    color: #3034b9 !important
+}
+
+.greatePoetriesBlock > h3 > a {
+    color: #bfbfbf
+}
+
+.question p, .question strong {
+    color: #565454
+}
+
+.biography_content {
+    color: #343434
+}
+
+.padding_left0 {
+    padding-left: 0 !important
+}
+
+.features-list img {
+    border: 1px solid #CCC9C9;
+    padding: 5px
+}
+
+.quotationList img {
+    width: 172px;
+    border: 1px solid #A7A5A5;
+    padding: 5px
+}
+
+.masterSayingList img {
+    width: 240px;
+    border: 1px solid #A7A5A5;
+    padding: 5px
+}
+
+.biographyBackground {
+    background-image: url(../images/biography_background.jpg)
+}
+
+.dropDownImage {
+    border: 1px solid #CCC9C9;
+    padding: 5px
+}
+
+.remove_divider {
+    border: none !important;
+    background: 0 0 !important
+}
+
+.faq-block {
+    width: 96%;
+    border-bottom: 4px double #D4D5D6;
+    margin: 0 auto;
+    display: table
+}
+
+.faq-extra-field {
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #848484;
+    font-size: 17px;
+    width: Calc(100% - 85px)
+}
+
+.faq-extra-field br {
+    display: block;
+    content: "A" !important;
+    margin-bottom: 7px !important
+}
+
+.faqBlock .faq-read-more-icon {
+    background: url(../img/png/read_more_close.jpg) 0 50% no-repeat;
+    float: left;
+    height: 30px;
+    cursor: pointer;
+    width: 85px;
+    position: absolute;
+    left: 15px;
+    bottom: 0
+}
+
+.faq-block-question {
+    display: inline-block;
+    font-size: 17px;
+    width: Calc(100% - 85px)
+}
+
+.float-none {
+    float: none !important;
+    display: inline-block;
+    vertical-align: top
+}
+
+.master-poet-first-block {
+    display: table;
+    float: none
+}
+
+.min_height_700 {
+    min-height: 700px
+}
+
+.background0 {
+    background: #dce3fd
+}
+
+.background1 {
+    background: #fff
+}
+
+.link-row {
+    padding-top: 15px;
+    padding-bottom: 15px
+}
+
+.first-tab {
+    -webkit-box-flex: 30.5%;
+    -webkit-flex: 30.5%;
+    -ms-flex: 30.5%;
+    flex: 30.5%;
+    max-height: 840px
+}
+
+.white-back {
+    background-color: #fff
+}
+
+.second-tab {
+    padding-top: 45px;
+    font-family: koodakBold;
+    -webkit-box-flex: 69.5%;
+    -webkit-flex: 69.5%;
+    -ms-flex: 69.5%;
+    flex: 69.5%;
+    max-height: 840px;
+    overflow: hidden
+}
+
+.new-article {
+    margin-top: 40px
+}
+
+.new-article .title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #292e96
+}
+
+.new-article-title-dbl-bdr {
+    border-top: 4px #292e96 double;
+    display: inline-block;
+    width: Calc(100% - 112px)
+}
+
+.new-article .item {
+    display: table;
+    margin: 13px 0;
+    line-height: 21px
+}
+
+.new-article .item img {
+    max-width: 140px;
+    display: inline-block;
+    vertical-align: middle
+}
+
+.new-article .item div {
+    vertical-align: middle;
+    display: table-cell
+}
+
+.new-article .item span, .new-article .item strong {
+    font-size: 18px;
+    color: #343434
+}
+
+.new-article .item a {
+    color: #bbb;
+    font-size: 18px
+}
+
+.biography_content + div img {
+    width: 100%
+}
+
+.site-links a {
+    font-family: Arial;
+    letter-spacing: .5pt
+}
+
+.footer_block a, .footer_block span {
+    color: #fff
+}
+
+.footer_block .go-home-page {
+    margin-top: 22px;
+    display: block
+}
+
+.navbar-collapse .navbar-nav {
+    margin: 27px -15px 0
+}
+
+.publishers .extra_field p {
+    margin-bottom: 0
+}
+
+.poetry .itemBlock {
+    padding: 30px 0
+}
+
+.latestProductBlock p:nth-child(1) {
+    color: #3034b9;
+    font-size: 19px;
+    letter-spacing: -.5px
+}
+
+.latestProductBlock p:nth-child(2) {
+    margin: 0
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+    .related-post .item div.vote ul {
+        margin-top: -webkit-calc(50% - 35px);
+        margin-top: calc(50% - 35px)
+    }
+}
+
+@media (min-width: 768px) {
+    .top-menu .navbar-nav > li > a {
+        margin-top: 10px;
+        margin-bottom: 10px
+    }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    #comments .comment_vote ul li {
+        float: none
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .first-tab, .second-tab {
+        max-height: none
+    }
+
+    body {
+        padding-top: 50px
+    }
+
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover {
+        color: #9d9d9d;
+        background-color: #f5f5f5
+    }
+
+    .dropdown-menu > li > a:focus {
+        background-color: #f5f5f5
+    }
+
+    h2 {
+        font-size: 23px
+    }
+
+    .not-found {
+        padding: 30px 0 0
+    }
+
+    .not-found h2 {
+        font-size: 28px
+    }
+
+    .users-form h2 a {
+        margin-top: 5px
+    }
+
+    #bs-example-navbar-collapse-1 {
+        width: 100%;
+        padding: 0;
+        margin: 0
+    }
+
+    #bs-example-navbar-collapse-1 li {
+        display: block
+    }
+
+    #commentsform-captcha {
+        display: block;
+        margin-right: 0
+    }
+
+    .users-form .input-group-btn button.fileinput-remove-button {
+        width: 110px;
+        margin-bottom: 2px
+    }
+
+    .users-form .input-group-btn button.fileinput-upload-button {
+        width: 110px;
+        margin-bottom: 2px;
+        display: block
+    }
+
+    .faq-block-question, .faq-extra-field, .menu_box ul li, .navBarUlBox, .navbar-nav, .pagination {
+        width: 100%
+    }
+
+    .users-form .file-input-new .input-group-btn button.fileinput-upload-button {
+        display: none
+    }
+
+    .top-menu.navbar-inverse {
+        padding: 5px 0;
+        background: #292e96;
+        min-height: 65px;
+        width: 100%;
+        height: 0
+    }
+
+    .top-menu.navbar-inverse .pull-right {
+        margin: 0 10px 0 auto;
+        background-color: #fff;
+        display: inline-block
+    }
+
+    .top-menu.navbar-inverse .pull-right img {
+        margin: 0 auto;
+        display: block;
+        max-width: 50px
+    }
+
+    .top-menu.navbar-inverse .menu_container {
+        padding: 0 10px
+    }
+
+    .navBarUlBox .nav {
+        margin: 0
+    }
+
+    .top-menu .navbar-header {
+        clear: none
+    }
+
+    .menu_box ul li {
+        display: block !important
+    }
+
+    .navbar-toggle {
+        margin-left: 0;
+        margin-right: 0;
+        background: #C2DFFF
+    }
+
+    .navbar-nav {
+        background-color: #38435f
+    }
+
+    #imagePositionFix, .nav li .up_pinter {
+        display: none !important
+    }
+
+    .pagination {
+        margin-left: 0 !important;
+        font-size: 13px !important
+    }
+
+    .dropdown-menu > li > a {
+        color: #d6ca5a;
+        background: -webkit-linear-gradient(left, #FCFA78, #FFDA44);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent
+    }
+
+    .slider_position {
+        margin-top: 0
+    }
+
+    .faq-block {
+        padding-bottom: 30px
+    }
+
+    .faqBlock .faq-read-more-icon {
+        bottom: -26px
+    }
+
+    .flex {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column
+    }
+
+    .social {
+        float: left;
+        margin: 0;
+        clear: both
+    }
+
+    .first-tab {
+        text-align: center
+    }
+
+    .second-tab .biographyDescriptionBorder, .second-tab .biographyDescriptionText + .biographyDescriptionBorder {
+        width: Calc((100% - 200px) / 2)
+    }
+
+    .mediaTabBlock, .portfolio-items.col-4 > li {
+        width: 100%
+    }
+
+    .mediaTabBlock ~ .news_latter:not(.footer_block) {
+        margin-top: 100px
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 991px) {
+    .articlesListTitle {
+        margin-top: 0
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 3000px) {
+    li.dropdown:hover > ul {
+        display: block
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1720px) {
+    .container, .top-menu {
+        width: 95% !important
+    }
+
+    .mediaTabBlock {
+        width: 95%
+    }
+
+    .second-tab .biographyDescriptionBorder {
+        padding-top: 35px
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 3000px) {
+    .second_menu {
+        display: none
+    }
+
+    .first_menu {
+        display: block
+    }
+
+    body {
+        padding-top: 130px
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 1199px) {
+    .second_menu {
+        display: block
+    }
+
+    .first_menu {
+        display: none
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .first-tab {
+        -webkit-box-flex: 35%;
+        -webkit-flex: 35%;
+        -ms-flex: 35%;
+        flex: 35%
+    }
+
+    .second-tab {
+        -webkit-box-flex: 65%;
+        -webkit-flex: 65%;
+        -ms-flex: 65%;
+        flex: 65%
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .first-tab {
+        -webkit-box-flex: 46%;
+        -webkit-flex: 46%;
+        -ms-flex: 46%;
+        flex: 46%
+    }
+
+    .second-tab {
+        -webkit-box-flex: 54%;
+        -webkit-flex: 54%;
+        -ms-flex: 54%;
+        flex: 54%;
+        max-height: none
+    }
+
+    .navBarUlBox .nav {
+        width: 90%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    #nav_box .pull-right {
+        margin-top: 10px
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 1580px) {
+    .new-article {
+        margin-top: 27px
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .site-links a {
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        max-width: 250px
+    }
+}
